@@ -15,9 +15,7 @@ import 'package:xmpp_stone/src/features/streammanagement/StreamManagmentModule.d
 import 'package:xmpp_stone/src/parser/StanzaParser.dart';
 import 'package:xmpp_stone/xmpp_stone.dart';
 
-import 'connection/XmppWebsocketApi.dart'
-    if (dart.library.io) 'connection/XmppWebsocketIo.dart'
-    if (dart.library.html) 'connection/XmppWebsocketHtml.dart' as xmppSocket;
+import 'connection/XmppWebsocketHtml.dart' as xmppSocket;
 
 enum XmppConnectionState {
   Idle,
